@@ -15,6 +15,10 @@
 		E0C0521726C5662100BE2752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C0521526C5662100BE2752 /* LaunchScreen.storyboard */; };
 		E0C0522226C5662100BE2752 /* TrendingNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0522126C5662100BE2752 /* TrendingNewsTests.swift */; };
 		E0C0522D26C5662100BE2752 /* TrendingNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0522C26C5662100BE2752 /* TrendingNewsUITests.swift */; };
+		E0C0523C26C56B1E00BE2752 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0523B26C56B1E00BE2752 /* NetworkManager.swift */; };
+		E0C0523E26C56E9A00BE2752 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0523D26C56E9A00BE2752 /* PostData.swift */; };
+		E0C0524126C57D3A00BE2752 /* DeatilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0524026C57D3A00BE2752 /* DeatilView.swift */; };
+		E0C0524326C583DF00BE2752 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0524226C583DF00BE2752 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E0C0522826C5662100BE2752 /* TrendingNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C0522C26C5662100BE2752 /* TrendingNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingNewsUITests.swift; sourceTree = "<group>"; };
 		E0C0522E26C5662100BE2752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C0523B26C56B1E00BE2752 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E0C0523D26C56E9A00BE2752 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		E0C0524026C57D3A00BE2752 /* DeatilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatilView.swift; sourceTree = "<group>"; };
+		E0C0524226C583DF00BE2752 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,12 @@
 			children = (
 				E0C0520A26C5661C00BE2752 /* AppDelegate.swift */,
 				E0C0520C26C5661C00BE2752 /* SceneDelegate.swift */,
-				E0C0520E26C5661C00BE2752 /* ContentView.swift */,
-				E0C0521026C5662100BE2752 /* Assets.xcassets */,
+				E0C0523F26C57D2300BE2752 /* Views */,
+				E0C0523A26C56AE100BE2752 /* Models */,
+				E0C0521226C5662100BE2752 /* Preview Content */,
 				E0C0521526C5662100BE2752 /* LaunchScreen.storyboard */,
 				E0C0521826C5662100BE2752 /* Info.plist */,
-				E0C0521226C5662100BE2752 /* Preview Content */,
+				E0C0521026C5662100BE2752 /* Assets.xcassets */,
 			);
 			path = TrendingNews;
 			sourceTree = "<group>";
@@ -134,6 +143,25 @@
 				E0C0522E26C5662100BE2752 /* Info.plist */,
 			);
 			path = TrendingNewsUITests;
+			sourceTree = "<group>";
+		};
+		E0C0523A26C56AE100BE2752 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0C0523B26C56B1E00BE2752 /* NetworkManager.swift */,
+				E0C0523D26C56E9A00BE2752 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0C0523F26C57D2300BE2752 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0C0520E26C5661C00BE2752 /* ContentView.swift */,
+				E0C0524026C57D3A00BE2752 /* DeatilView.swift */,
+				E0C0524226C583DF00BE2752 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C0523E26C56E9A00BE2752 /* PostData.swift in Sources */,
+				E0C0524126C57D3A00BE2752 /* DeatilView.swift in Sources */,
+				E0C0523C26C56B1E00BE2752 /* NetworkManager.swift in Sources */,
 				E0C0520B26C5661C00BE2752 /* AppDelegate.swift in Sources */,
 				E0C0520D26C5661C00BE2752 /* SceneDelegate.swift in Sources */,
 				E0C0520F26C5661C00BE2752 /* ContentView.swift in Sources */,
+				E0C0524326C583DF00BE2752 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
